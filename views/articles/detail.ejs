@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container-all">
+            <div class="container-main">
+                <h1 class="detail-title"><%= article.title %></h1>
+                <h3 class="detail-author"><%= article.author %></h3>
+                <h5 class="detail-date">
+                    <%= article.created_at.toString().substring(4, 15) %>
+                </h5>
+                <p class="detail-body"><%= article.body %></p>
+            </div>
+        </div>
+    </body>
+</html>
